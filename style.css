@@ -1,0 +1,259 @@
+/*
+Theme Name: Eightmedi Lite Child
+Theme URI: http://www.brdjservices.com
+Author: Tyler Reed
+Description: Child Theme of eightmedi-lite
+Version: 1.0.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: eightmedi-lite-child
+Template: eightmedi-lite
+Tags: one-column,two-columns,three-columns,left-sidebar,right-sidebar,grid-layout,flexible-header,custom-background,featured-image-header,footer-widgets,full-width-template,threaded-comments,theme-options,e-commerce
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+
+header#masthead {
+    border-bottom: 0px;
+		background-color: black;
+}
+
+.main-navigation ul, .main-navigation .nav-menu {
+    color: white;
+}
+
+.navbar-fixed {
+  top: 0;
+  z-index: 999999;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-fixed + .featured {
+  padding-top: 100px;
+}
+
+h2.widget-map-title {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Space between sections on the template-home page
+----------------------------------------------------------------*/
+
+.extra-space {
+  margin-top: 100px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+----------------------------------------------------------------*/
+
+.footer-social a {
+  color: var(--airship);
+}
+
+.footer-social a:hover {
+  color: var(--silver-plating);
+  background: var(--airship);
+}
+
+.footer-social a::after {
+  border-top: 2px solid var(--flywheel);
+}
+
+.main-footer {
+  background: var(--airship);
+}
+
+#es-top::after {
+  color: white;
+}
+
+#es-top:hover:after {
+  color: var(--woodmarking);
+}
+
+.footer-wrap {
+  background: var(--airship) none repeat scroll 0 0;
+}
+
+.fdm-item-panel .fdm-item-title {
+  font-weight: bold !important;
+  color: var(--steam-whistle) !important;
+}
+
+.widget ul li a {
+  font-style: italic;
+  font-weight: bold;
+  color: var(--woodmarking);
+}
+
+/*--------------------------------------------------------------
+# Space Between Slider and Featured Sections
+----------------------------------------------------------------*/
+
+.bx-wrapper {
+  margin: auto;
+}
+
+
+h1.page-title, .sidebar .widget-title {
+	background: var(--airship);
+  color: white;
+}
+
+h1.page-title:after, .sidebar .widget-title:after {
+	border-bottom: 15px solid var(--flywheel);
+	border-left: 15px solid transparent;
+}
+
+.edit-link a, .reply a, .entry-footer .edit-link a, .entry-footer .reply a {
+	background: var(--airship);
+	color: #fff;
+	border: 1px solid transparent;
+	box-shadow: 0 0 0 0 var(--airship);
+}
+
+.edit-link a:hover, .reply a:hover, .entry-footer .edit-link a:hover, .entry-footer .reply a:hover, .entry-footer span a.post-edit-link:hover {
+	border-color: #fff;
+	box-shadow: 0 0 0 5px var(--airship);
+}
+
+/*--------------------------------------------------------------
+# Featured Block Colors 1 - 3
+----------------------------------------------------------------*/
+
+.featured-block {
+	float: left;
+	width: 25%;
+	background: var(--cog);
+	vertical-align: top;
+  padding: 30px;
+	color: #fff;
+	min-height: 280px;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	transition: all ease 0.4s;
+	-webkit-transition: all ease 0.4s;
+}
+
+.featured-block.featured-post-2 {
+	background: var(--airship);
+}
+
+.featured-block.featured-post-3 {
+	background: var(--steam-whistle);
+  color: white;
+}
+
+.featured-block.featured-post-4 {
+  background: var(--light-sw);
+}
+
+.featured-block.featured-post-3 a {
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# Events / Latest News Top-Left Corner Date
+----------------------------------------------------------------*/
+
+.latest-news .news-date {
+  background: var(--cog) none repeat scroll 0 0;
+  color: white;
+}
+
+.latest-news figure.news-image:hover .news-date {
+  background: var(--woodmarking) none repeat scroll 0 0;
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# View More Events / Latest News Home Page Button
+----------------------------------------------------------------*/
+
+a.btn {
+  background: #cc444d;
+}
+
+a.btn:hover {
+  background: #b2363f;
+  box-shadow: 0 0 0 5px #b2363f;
+}
+
+.latest-news a:after {
+  border-bottom: 0px;
+}
+
+
+.mc-main {
+  margin: 25px 0 50px 0 !important;
+}
+
+.mc-main .details img {
+  width: auto;
+}
+
+hr {
+  border: 4px solid var(--flywheel);
+  height: 0px;
+}
+
+.single article.category-featured figure {
+    background: var(--cog) none repeat scroll 0 0;
+    padding: 15px;
+    line-height: 0px;
+}
+
+/*--------------------------------------------------------------
+# Video Gallery Plugin
+----------------------------------------------------------------*/
+
+section #huge_it_videogallery {
+  margin: 30px;
+}
+
+/*--------------------------------------------------------------
+# Image for Contact Form
+----------------------------------------------------------------*/
+
+.image-contact-form {
+  background: var(--cog);
+  padding: 15px;
+}
+
+/*--------------------------------------------------------------
+# About Section
+----------------------------------------------------------------*/
+.about .about-content {
+  background: var(--winter-blue);
+}
+
+.about .btn {
+  color: var(--winter-blue);
+}
+
+.about .btn:hover {
+  border-color: var(--light-sw);
+  background: var(--winter-blue);
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# Variables
+----------------------------------------------------------------*/
+
+:root {
+  --silver-plating: #B5B5B5;
+  --flywheel:       #838383;
+  --airship:        #313131;
+  --woodmarking:    #997744;
+  --steam-whistle:  #505050;
+  --cog:            #171717;
+  --light-sw:       #888585;
+  --winter-blue:    #192a50;
+}
